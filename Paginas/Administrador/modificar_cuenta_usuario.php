@@ -163,7 +163,7 @@ $nombreUsuario = $row['nombre'];
                                             // Realiza la actualización en la base de datos
                                             $sql = "UPDATE usuarios SET nombre='$nombre', apellido='$apellido' WHERE ci='$ci_new'";
                                             
-                                            $conexion = new mysqli('localhost', 'root', '', 'reservasumss1');
+                                            $conexion = new mysqli('monorail.proxy.rlwy.net', 'root', '', 'railway','54866');
                                             // Ejecuta la consulta
                                             if (mysqli_query($conexion, $sql)) {
                                                 // Redirige a la página de modificación con el parámetro ci_new

@@ -3,7 +3,7 @@
 function obtener_nombre($ci_new){
 
     $query = "SELECT * FROM usuarios WHERE ci = '$ci_new' ";
-    $conexion= new mysqli('localhost','root','','reservasumss1');
+    $conexion= new mysqli('monorail.proxy.rlwy.net','root','$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy";','railway','54866');
     $result = $conexion->query($query);
     
     $row = $result->fetch_assoc();
@@ -13,7 +13,7 @@ function obtener_nombre($ci_new){
 
 function obtener_apellido($ci_new){
     $query = "SELECT * FROM usuarios WHERE ci= '$ci_new'";
-    $conexion= new mysqli('localhost','root','','reservasumss1');
+    $conexion= new mysqli('monorail.proxy.rlwy.net','root','$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy";','railway','54866');
 $result = $conexion->query($query);
 
 $row = $result->fetch_assoc();
@@ -23,7 +23,7 @@ return $apellidoUsuario;
 
 function obtener_correo($ci_new){
     $query = "SELECT * FROM usuarios WHERE ci = '$ci_new'";
-    $conexion= new mysqli('localhost','root','','reservasumss1');
+    $conexion= new mysqli('monorail.proxy.rlwy.net','root','$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy";','railway','54866');
     $result = $conexion->query($query);
     
     $row = $result->fetch_assoc();

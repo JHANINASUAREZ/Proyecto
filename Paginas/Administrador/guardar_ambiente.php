@@ -2,10 +2,10 @@
 require_once '../../config/validacion_session.php';
 require_once '../../config/conexion.php';
 // Conexión a la base de datos (reemplaza los valores con los de tu servidor)
-$servername = "localhost";
+$servername = "monorail.proxy.rlwy.net";
 $username = "root";
-$password = "";
-$dbname = "reservasumss1";
+$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy";
+$dbname = "railway";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

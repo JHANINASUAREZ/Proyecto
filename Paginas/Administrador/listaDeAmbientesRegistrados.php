@@ -1,10 +1,10 @@
 <?php
 // Conexión a la base de datos
 
-$host = "localhost";
-$dbname = "reservasumss1"; 
+$host = "monorail.proxy.rlwy.net";
+$dbname = "railway"; 
 $username = "root"; 
-$password = ""; 
+$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy"; 
 
 
 try {
@@ -170,10 +170,10 @@ $nombreUsuario = $row['nombre'];
                     </thead>
                     <tbody>
                         <?php 
-                         $host = "localhost";
+                         $host = "monorail.proxy.rlwy.net";
                          $user = "root";
                          $password="";
-                         $db = "reservasumss1";
+                         $db = "railway";
                         
                          $conexion= new mysqli($host,$user,$password,$db);
                         

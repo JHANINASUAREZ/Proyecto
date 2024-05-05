@@ -1,9 +1,9 @@
 <?php
 // Conexión a la base de datos
-$host = "localhost"; 
-$dbname = "reservasumss1"; 
+$host = "monorail.proxy.rlwy.net"; 
+$dbname = "railway"; 
 $username = "root"; 
-$password = ""; 
+$password = "uiszwdaBOhGxlHiwFJHRlbdJbaMLDnqy"; 
 try {
     $conexion = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

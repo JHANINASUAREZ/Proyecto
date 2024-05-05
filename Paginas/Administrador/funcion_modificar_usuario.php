@@ -9,7 +9,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['fac
     // Realiza la actualización en la base de datos
     $sql = "UPDATE usuarios SET nombre='$nombre', apellido='$apellido' WHERE ci='$ci_modifi'";
     print_r($sql);
-    $conexion = new mysqli('localhost', 'root', '', 'reservasumss1');
+    $conexion = new mysqli('monorail.proxy.rlwy.net', 'root', '', 'railway','54866');
     // Ejecuta la consulta
     if (mysqli_query($conexion, $sql)) {
         echo "<p>Usuario actualizado con éxito.</p>";
