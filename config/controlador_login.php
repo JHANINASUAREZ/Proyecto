@@ -1,4 +1,6 @@
 <?php
+session_start(); // Inicia la sesión al principio del archivo
+
 require_once('conexion.php');
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
@@ -8,7 +10,6 @@ $result = $conexion->query($query);
 $row = $result->fetch_assoc();
 
 if ($result->num_rows > 0) {
-    session_start();
     $_SESSION['user'] = $correo;
     $_SESSION['rol'] = $row['rol'];
     
@@ -25,3 +26,4 @@ if ($result->num_rows > 0) {
 } else {
     header("location: ../index.php?error=cuenta_no_existe");
 }
+?>
